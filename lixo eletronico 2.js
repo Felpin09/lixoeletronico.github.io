@@ -11,7 +11,185 @@ const ESTADOS = [
 ];
 
 const PONTOS = {
+    AC: {
+        "Rio Branco": [
+            {
+                nome: "Ecoponto Central Rio Branco",
+                desc: "Ponto de recolhimento de pequenos e médios eletroeletrônicos e pilhas.",
+                tag: "Ecoponto"
+            }
+        ]
+    },
+    AL: {
+        "Maceió": [
+            {
+                nome: "Ecoponto Maceió / Coleta Seletiva",
+                desc: "Ponto municipal para entrega voluntária de resíduos eletrônicos.",
+                tag: "Ecoponto"
+            }
+        ]
+    },
+    AP: {
+        "Macapá": [
+            {
+                nome: "Ecoponto Macapá",
+                desc: "Local de descarte correto para computadores, monitores e periféricos.",
+                tag: "Ecoponto"
+            }
+        ]
+    },
+    AM: {
+        "Manaus": [
+            {
+                nome: "Centro de Descarte de Eletrônicos Manaus",
+                desc: "Ponto fixo para recolhimento e destinação ambientalmente adequada.",
+                tag: "Ecoponto"
+            }
+        ]
+    },
+    BA: {
+        "Salvador": [
+            {
+                nome: "Ecoponto Salvador",
+                desc: "Coleta de eletrodomésticos, celulares e equipamentos de informática.",
+                tag: "Ecoponto"
+            }
+        ]
+    },
+    CE: {
+        "Fortaleza": [
+            {
+                nome: "Ecoponto Fortaleza",
+                desc: "Recebimento de e-waste e pequenos aparelhos domésticos fora de uso.",
+                tag: "Ecoponto"
+            }
+        ]
+    },
+    DF: {
+        "Brasília": [
+            {
+                nome: "Ecoponto Brasília / Plano Piloto",
+                desc: "Ponto para entrega voluntária de resíduos eletroeletrônicos.",
+                tag: "Ecoponto"
+            }
+        ]
+    },
+    ES: {
+        "Vitória": [
+            {
+                nome: "Ecoponto Vitória",
+                desc: "Descarte gratuito de componentes eletrônicos e bateria.",
+                tag: "Ecoponto"
+            }
+        ]
+    },
+    GO: {
+        "Goiânia": [
+            {
+                nome: "Ecoponto Goiânia",
+                desc: "Ponto de coleta especializado em eletrônicos e lâmpadas.",
+                tag: "Ecoponto"
+            }
+        ]
+    },
+    MA: {
+        "São Luís": [
+            {
+                nome: "Ecoponto São Luís",
+                desc: "Coleta e triagem de resíduos eletroeletrônicos urbanos.",
+                tag: "Ecoponto"
+            }
+        ]
+    },
+    MT: {
+        "Cuiabá": [
+            {
+                nome: "Ecoponto Cuiabá",
+                desc: "Recebimento de computadores, TVs e aparelhos portáteis.",
+                tag: "Ecoponto"
+            }
+        ]
+    },
+    MS: {
+        "Campo Grande": [
+            {
+                nome: "Ecoponto Campo Grande",
+                desc: "Ponto fixo municipal de descarte consciente de e-waste.",
+                tag: "Ecoponto"
+            }
+        ]
+    },
+    MG: {
+        "Belo Horizonte": [
+            {
+                nome: "Ecoponto BH",
+                desc: "Coleta seletiva de aparelhos e periféricos eletroeletrônicos.",
+                tag: "Ecoponto"
+            }
+        ]
+    },
+    PA: {
+        "Belém": [
+            {
+                nome: "Ecoponto Belém",
+                desc: "Ponto de entrega voluntária de equipamentos de TI e celulares.",
+                tag: "Ecoponto"
+            }
+        ]
+    },
+    PB: {
+        "João Pessoa": [
+            {
+                nome: "Ecoponto João Pessoa",
+                desc: "Local destinado para descarte seguro de eletrônicos quebrados.",
+                tag: "Ecoponto"
+            }
+        ]
+    },
+    PR: {
+        "Curitiba": [
+            {
+                nome: "Ecoponto Curitiba",
+                desc: "Ponto de logística reversa e reciclagem de resíduos eletrônicos.",
+                tag: "Ecoponto"
+            }
+        ]
+    },
+    PE: {
+        "Recife": [
+            {
+                nome: "Ecoponto Recife",
+                desc: "Recebimento e destinação ambientalmente correta de e-waste.",
+                tag: "Ecoponto"
+            }
+        ]
+    },
+    PI: {
+        "Teresina": [
+            {
+                nome: "Ecoponto Teresina",
+                desc: "Ponto oficial para coleta de aparelhos fora de uso.",
+                tag: "Ecoponto"
+            }
+        ]
+    },
+    RJ: {
+        "Rio de Janeiro": [
+            {
+                nome: "Ecoponto RJ Central",
+                desc: "Descarte de eletroeletrônicos, monitores e baterias.",
+                tag: "Ecoponto"
+            }
+        ]
+    },
     RN: {
+        "Natal": [
+            {
+                nome: "Ecoponto Natal",
+                desc: "Coleta de e-waste e pequenos aparelhos eletrônicos.",
+                tag: "Ecoponto"
+            }
+        ],
         "Mossoró": [
             {
                 nome: "Sede da CAERN — Bom Jardim",
@@ -48,6 +226,69 @@ const PONTOS = {
                 nome: "Ecopontos em escolas municipais",
                 desc: "Implantação em andamento pelo projeto TecnoSustentável RN (5 ecopontos previstos).",
                 tag: "Em implantação"
+            }
+        ]
+    },
+    RS: {
+        "Porto Alegre": [
+            {
+                nome: "Ecoponto Porto Alegre",
+                desc: "Ponto de recebimento e descarte responsável de e-waste.",
+                tag: "Ecoponto"
+            }
+        ]
+    },
+    RO: {
+        "Porto Velho": [
+            {
+                nome: "Ecoponto Porto Velho",
+                desc: "Coleta voluntária de eletroeletrônicos sem uso.",
+                tag: "Ecoponto"
+            }
+        ]
+    },
+    RR: {
+        "Boa Vista": [
+            {
+                nome: "Ecoponto Boa Vista",
+                desc: "Local de descarte de resíduos eletrônicos domésticos.",
+                tag: "Ecoponto"
+            }
+        ]
+    },
+    SC: {
+        "Florianópolis": [
+            {
+                nome: "Ecoponto Florianópolis",
+                desc: "Ponto de coleta e logística reversa de eletrônicos.",
+                tag: "Ecoponto"
+            }
+        ]
+    },
+    SP: {
+        "São Paulo": [
+            {
+                nome: "Ecoponto SP Central",
+                desc: "Descarte de computadores, celulares e aparelhos domésticos.",
+                tag: "Ecoponto"
+            }
+        ]
+    },
+    SE: {
+        "Aracaju": [
+            {
+                nome: "Ecoponto Aracaju",
+                desc: "Ponto público de destinação de resíduos eletrônicos.",
+                tag: "Ecoponto"
+            }
+        ]
+    },
+    TO: {
+        "Palmas": [
+            {
+                nome: "Ecoponto Palmas",
+                desc: "Recebimento de e-waste para reciclagem seletiva.",
+                tag: "Ecoponto"
             }
         ]
     }
